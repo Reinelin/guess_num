@@ -1,9 +1,14 @@
+maxn = input('please enter a maximum number:')
+minn = input('please enter a minimum number:')
+maxn = int(maxn)
+minn = int(minn)
+
 import random
-r = random.randint(1, 100)
+r = random.randint(minn, maxn)
 count = 0
 while True:
 	count += 1
-	num = input ('please enter a number:')
+	num = input('please enter a number:')
 	num = int(num)
 	if num == r:
 		print('correct!')
